@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <script>
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("header").innerHTML = this.responseText;
+            }
+        };
+        xhttp.open("GET", "header.html", true);
+        xhttp.send();
+    </script>
+
+    <div class="container">
+        <div class="detail-product">
+            <div class="small-container single-product">
+                <div class="row">
+                    <div class="col-2">
+                        <img id="product-img" src="pictures/nike-blue-white-1.png" alt="">
+                        <div class="small-img-row">
+                            <div class="small-img-col">
+                                <img class="small-img" src="pictures/nike-blue-white-1.png" alt="">
+                            </div>
+                            <div class="small-img-col">
+                                <img class="small-img" src="pictures/nike-running-black-1.png" alt="">
+                            </div>
+                            <div class="small-img-col">
+                                <img class="small-img" src="pictures/nike-running-black-2-removebg-preview.png" alt="">
+                            </div>
+                            <div class="small-img-col">
+                                <img class="small-img" src="pictures/nike-running-black-2-removebg-preview.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <p>Home / Giày Mẫu</p>
+                        <h1>Giày mẫu <a href="#" class="fa-regular fa-heart" id="heart"></a></h1>
+                        <h4>$10000000</h4>
+                        <select name="" id="">
+                            <option value="">Select Size</option>
+                            <option value="">36</option>
+                            <option value="">37</option>
+                            <option value="">38</option>
+                            <option value="">39</option>
+                            <option value="">40</option>
+                            <option value="">41</option>
+                            <option value="">42</option>
+                            <option value="">43</option>
+                            <option value="">44</option>
+                        </select>
+                        <input type="number" value="1">
+                        <a href="#" class="btn">Add to cart</a>
+                        <h3>Product Details </h3>
+                        <br>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia suscipit ea sapiente
+                            laudantium deserunt tenetur autem, quisquam atque repellendus, molestiae delectus,
+                            cupiditate quos consequuntur? Quae nobis dicta adipisci totam labore!</p>
+
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-12 col-lg-6">
+                        <h4 class="product-description">
+                            Mô tả Sản phẩm
+                        </h4>
+                        <p class="product-description-text">
+                            Không có điều gì tôi thực sự muốn làm trong đời mà tôi không thể làm tốt. Đó là kỹ năng của
+                            tôi. Tôi thực sự không có tài năng gì đặc biệt ngoại trừ khả năng học hỏi. Đó là những gì
+                            tôi làm. Đó là lý do tôi ở đây. Đừng sợ sai vì bạn không thể học được gì từ một lời khen.
+                        </p>
+                        <h6 class="benefits">
+                            Những lợi ích
+                        </h6>
+                        <ul class="text-sm">
+                            <li class="mb-2">
+                                Dầu là nguồn năng lượng chính cho nhiều lĩnh vực khác nhau, bao gồm giao thông vận tải,
+                                công nghiệp và dân dụng.
+                            </li>
+                            <li class="mb-2">
+                                Dầu rất linh hoạt và được sử dụng trong sản xuất nhiều loại sản phẩm. Là nguyên liệu thô
+                                để sản xuất nhựa.
+                            </li>
+                            <li class="mb-2">
+                                Dầu là nguồn hóa dầu quan trọng được sử dụng trong sản xuất nhựa.
+                            </li>
+                        </ul>
+                        <h6 class="additional-info">
+                            Thông tin thêm về sản phẩm
+                        </h6>
+                        <p class="additional-info-text">
+                            Không có điều gì tôi thực sự muốn làm trong đời mà tôi không thể làm tốt. Đó là kỹ năng của
+                            tôi. Tôi thực sự không có tài năng gì đặc biệt ngoại trừ khả năng học hỏi.
+                        </p>
+                    </div>
+                </div>
+                <div class="review">
+                    <div class="mx-auto text-center w-md-60 mb-5">
+                        <h3>Our Customer’s Opinion</h3>
+                        <p>Society has put up so many boundaries, so many limitations on what’s right and wrong that
+                            it’s
+                            almost impossible to get a pure thought out. </p>
+                    </div>
+
+                    <div class="reviews">
+                        <h4 class="review-title">Reviews</h4>
+                        <div class="rating">
+                            <div class="average-rating"></div>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="ratings-detail">
+                            <div class="rating-row">
+                                <div class="star-label">5 <i class="fa-solid fa-star"></i></div>
+                                <div class="progress-bar">
+                                    <div class="progress-filled-5" style="--percentage: 0;"></div>
+                                    <div class="progress-empty"></div>
+                                </div>
+                                <div class="percentage5">0%</div>
+                            </div>
+                            <div class="rating-row">
+                                <div class="star-label">4 <i class="fa-solid fa-star"></i></div>
+                                <div class="progress-bar">
+                                    <div class="progress-filled-4" style="--percentage: 0;"></div>
+                                    <div class="progress-empty"></div>
+                                </div>
+                                <div class="percentage4">0%</div>
+                            </div>
+                            <div class="rating-row">
+                                <div class="star-label">3 <i class="fa-solid fa-star"></i></div>
+                                <div class="progress-bar">
+                                    <div class="progress-filled-3" style="--percentage: 0;"></div>
+                                    <div class="progress-empty"></div>
+                                </div>
+                                <div class="percentage3">0%</div>
+                            </div>
+                            <div class="rating-row">
+                                <div class="star-label">2 <i class="fa-solid fa-star"></i></div>
+                                <div class="progress-bar">
+                                    <div class="progress-filled-2" style="--percentage: 0;"></div>
+                                    <div class="progress-empty"></div>
+                                </div>
+                                <div class="percentage2">0%</div>
+                            </div>
+                            <div class="rating-row">
+                                <div class="star-label">1 <i class="fa-solid fa-star"></i></div>
+                                <div class="progress-bar">
+                                    <div class="progress-filled-1" style="--percentage: 0;"></div>
+                                    <div class="progress-empty"></div>
+                                </div>
+                                <div class="percentage1">0%</div>
+                            </div>
+                        </div>
+                        <div class="ui comments">
+                            <h3 class="ui dividing header">Comments</h3>
+                            <div class="comment">
+                              <a class="avatar">
+                                <img src="/images/avatar/small/matt.jpg">
+                              </a>
+                              <div class="content">
+                                <a class="author">Matt</a>
+                                <div class="metadata">
+                                  <span class="date">Today at 5:42PM</span>
+                                </div>
+                                <div class="text">
+                                  How artistic!
+                                </div>
+                                <div class="actions">
+                                  <a class="reply">Reply</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="comment">
+                              <a class="avatar">
+                                <img src="/images/avatar/small/elliot.jpg">
+                              </a>
+                              <div class="content">
+                                <a class="author">Elliot Fu</a>
+                                <div class="metadata">
+                                  <span class="date">Yesterday at 12:30AM</span>
+                                </div>
+                                <div class="text">
+                                  <p>This has been very useful for my research. Thanks as well!</p>
+                                </div>
+                                <div class="actions">
+                                  <a class="reply">Reply</a>
+                                </div>
+                              </div>
+                              <div class="comments">
+                                <div class="comment">
+                                  <a class="avatar">
+                                    <img src="/images/avatar/small/jenny.jpg">
+                                  </a>
+                                  <div class="content">
+                                    <a class="author">Jenny Hess</a>
+                                    <div class="metadata">
+                                      <span class="date">Just now</span>
+                                    </div>
+                                    <div class="text">
+                                      Elliot you are always so right :)
+                                    </div>
+                                    <div class="actions">
+                                      <a class="reply">Reply</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="comment">
+                              <a class="avatar">
+                                <img src="/images/avatar/small/joe.jpg">
+                              </a>
+                              <div class="content">
+                                <a class="author">Joe Henderson</a>
+                                <div class="metadata">
+                                  <span class="date">5 days ago</span>
+                                </div>
+                                <div class="text">
+                                  Dude, this is awesome. Thanks so much
+                                </div>
+                                <div class="actions">
+                                  <a class="reply">Reply</a>
+                                </div>
+                              </div>
+                            </div>
+                            <form class="ui reply form">
+                              <div class="field">
+                                <textarea></textarea>
+                              </div>
+                              <div class="ui blue labeled submit icon button">
+                                <i class="icon edit"></i> Add Reply
+                              </div>
+                            </form>
+                          </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="services">
+
+                <div class="services-box">
+
+                    <div class="services-card">
+                        <i class='bx bxs-truck'></i>
+                        <h3>Delivery</h3>
+                        <p>Lorem ipsum dolor sit eaque quasi.</p>
+                    </div>
+
+                    <div class="services-card">
+                        <i class='bx bx-headphone'></i>
+                        <h3>24/7 Services</h3>
+                        <p>Lorem ipsum dolor sit eaque quasi.</p>
+                    </div>
+
+                    <div class="services-card">
+                        <i class='bx bxs-purchase-tag'></i>
+                        <h3>Best Deal</h3>
+                        <p>Lorem ipsum dolor sit eaque quasi.</p>
+                    </div>
+
+                    <div class="services-card">
+                        <i class='bx bxs-lock-alt'></i>
+                        <h3>Secure Payment</h3>
+                        <p>Lorem ipsum dolor sit eaque quasi.</p>
+                    </div>
+                    <a style="color: white;" href="#" id="scroll-to-top-button"><i class="fa-solid fa-angles-up"></i>
+                        Click to scroll to top</a>
+                </div>
+
+            </div>
+        </div>
+        <script>
+            var ProductImg = document.querySelector("#product-img");
+            var SmallImg = document.querySelectorAll(".small-img");
+            SmallImg[0].onclick = function () {
+                ProductImg.src = SmallImg[0].src;
+                console.log("Nút 1");
+            };
+            SmallImg[1].onclick = function () {
+                ProductImg.src = SmallImg[1].src;
+                console.log("Nút 2");
+
+            };
+            SmallImg[2].onclick = function () {
+                ProductImg.src = SmallImg[2].src;
+                console.log("Nút 3");
+
+            };
+            SmallImg[3].onclick = function () {
+                ProductImg.src = SmallImg[3].src;
+                console.log("Nút 4");
+
+            };
+
+            // Tạo mảng ratings chứa dữ liệu ngẫu nhiên ban đầu
+            var ratings = [
+                { rating: 5, id: 1 },
+                { rating: 4, id: 2 },
+                { rating: 3, id: 3 },
+                { rating: 5, id: 4 },
+                { rating: 1, id: 5 },
+                { rating: 5, id: 6 },
+                { rating: 5, id: 7 },
+                { rating: 2, id: 8 },
+                { rating: 5, id: 9 },
+                { rating: 3, id: 10 }
+            ];
+
+            // Tính tổng số lượt đánh giá
+            var totalCount = ratings.length;
+
+            // Tính tổng số lượt đánh giá 
+            var count5 = 0;
+            var count4 = 0;
+            var count3 = 0;
+            var count2 = 0;
+            var count1 = 0;
+            for (var i = 0; i < ratings.length; i++) {
+                if (ratings[i].rating == 5) {
+                    count5++;
+                } else if (ratings[i].rating == 4) {
+                    count4++;
+                } else if (ratings[i].rating == 3) {
+                    count3++;
+                } else if (ratings[i].rating == 2) {
+                    count2++;
+                } else if (ratings[i].rating == 1) {
+                    count1++;
+                }
+            }
+
+            var totalStarsCount = (count1 * 1 + count2 * 2 + count3 * 3 + count4 * 4 + count5 * 5) / ratings.length;
+
+            // Tính trung bình sao
+            var averageRating = totalStarsCount;
+
+            // Làm tròn trung bình sao
+            var roundedRating = Math.round(averageRating);
+
+            // Hiển thị trung bình sao
+            var averageRatingElement = document.querySelector('.average-rating');
+            averageRatingElement.textContent = averageRating.toFixed(1);
+
+            // Hiển thị số sao
+            var starsElement = document.querySelector('.stars');
+            starsElement.innerHTML = '';
+
+            for (var i = 0; i < 5; i++) {
+                var star = document.createElement('i');
+                star.classList.add('fa-solid', 'fa-star');
+
+                if (i < Math.floor(averageRating)) {
+                    star.classList.add('yellow-star');
+                } else if (i === Math.floor(averageRating) && averageRating % 1 !== 0) {
+                    star.classList.add('half-star');
+                    var halfStar = document.createElement('i');
+                    halfStar.classList.add('fa-solid', 'fa-star-half');
+                    star.appendChild(halfStar);
+                } else {
+                    star.classList.add('gray-star');
+                }
+
+                starsElement.appendChild(star);
+            }
+
+            /// Cập nhật thanh tiến trình và phần trăm
+            var ratingRows = document.querySelectorAll('.rating-row');
+
+            ratingRows.forEach(function (row) {
+                var stars = row.querySelector('.star-label');
+                var progressFilled1 = row.querySelector('.progress-filled-1');
+                var progressFilled2 = row.querySelector('.progress-filled-2');
+                var progressFilled3 = row.querySelector('.progress-filled-3');
+                var progressFilled4 = row.querySelector('.progress-filled-4');
+                var progressFilled5 = row.querySelector('.progress-filled-5');
+
+                var percentage1 = row.querySelector('.percentage1');
+                var percentage2 = row.querySelector('.percentage2');
+                var percentage3 = row.querySelector('.percentage3');
+                var percentage4 = row.querySelector('.percentage4');
+                var percentage5 = row.querySelector('.percentage5');
+
+                var rating = parseInt(stars.innerText);
+
+                var progress1 = (count1 / totalCount) * 100;
+                var progress2 = (count2 / totalCount) * 100;
+                var progress3 = (count3 / totalCount) * 100;
+                var progress4 = (count4 / totalCount) * 100;
+                var progress5 = (count5 / totalCount) * 100;
+
+                var progressBarWidth = 200; // Độ dài thanh progress bar
+                var filledWidth1 = (progressBarWidth / 100) * progress1;
+                var filledWidth2 = (progressBarWidth / 100) * progress2;
+                var filledWidth3 = (progressBarWidth / 100) * progress3;
+                var filledWidth4 = (progressBarWidth / 100) * progress4;
+                var filledWidth5 = (progressBarWidth / 100) * progress5;
+
+
+                if (progressFilled1) {
+                    progressFilled1.style.width = filledWidth1 + 'px';
+                }
+
+                if (progressFilled2) {
+                    progressFilled2.style.width = filledWidth2 + 'px';
+                }
+
+                if (progressFilled3) {
+                    progressFilled3.style.width = filledWidth3 + 'px';
+                }
+
+                if (progressFilled4) {
+                    progressFilled4.style.width = filledWidth4 + 'px';
+                }
+
+                if (progressFilled5) {
+                    progressFilled5.style.width = filledWidth5 + 'px';
+                }
+
+                if (percentage1) {
+                    percentage1.innerText = count1;
+                }
+
+                if (percentage2) {
+                    percentage2.innerText = count2;
+                }
+
+                if (percentage3) {
+                    percentage3.innerText = count3;
+                }
+
+                if (percentage4) {
+                    percentage4.innerText = count4;
+                }
+
+                if (percentage5) {
+                    percentage5.innerText = count5;
+                }
+            });
+        </script>
+
+</body>
+
+</html>

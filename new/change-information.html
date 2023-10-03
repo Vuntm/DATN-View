@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="header"></div>
+    <script>
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("header").innerHTML = this.responseText;
+            }
+        };
+        xhttp.open("GET", "header.html", true);
+        xhttp.send();
+    </script>
+
+    <!-- <div class="register-container">
+            <div class="greeting-box">
+                <div class="box">
+                    <form action="">
+                        <h2>Sign in</h2>
+                        <div class="inputBox">
+                            <input type="text" name="" id="" required>
+                            <span>Username</span>
+                            <i></i>
+                            <small id="Username-error"></small>
+                        </div>
+                        <div class="inputBox">
+                            <input type="password" required>
+                            <span>Password</span>
+                            <i></i>
+                            <small id="Password-error"></small>
+                        </div>
+                        <div class="links">
+                            <a href="">Forget Password</a>
+                            <a href="">Signup</a>
+                        </div>
+                        <input type="submit" value="Login">
+                    </form>
+                </div>
+                <div class="greeting-text">
+                    <h1 id="greeting-text">Welcome back, friend!</h1>
+                    <i>Login with your personal detail to use all of site feature</i>
+                    <button><a href="#"><h4>SIGN UP</h4></a></button>
+                </div>
+            </div>
+        </div> -->
+    <div class="container">
+        <div class="myaccount__header__wrapper">
+                <div class="cols__container">
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <script>
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("header").innerHTML = this.responseText;
+            }
+        };
+        xhttp.open("GET", "header.html", true);
+        xhttp.send();
+    </script>
+    <div class="container">
+        <div class="myaccount__header__wrapper">
+            <div class="cols__container">
+                <div class="left__col">
+                    <div class="img__container">
+                        <img src="pictures/nike-running-black-2-removebg-preview.png" alt="Anna Smith" />
+                        <span></span>
+                    </div>
+                    <h2>Tên</h2>
+                    <p>Địa chỉ</p>
+                    <p>Ngày sinh</p>
+                    <p>Email</p>
+                    <p>Số điện thoại</p>
+
+                    <ul class="about">
+                        <button><a href="change-information.html">Thay đổi thông tin cá nhân</a></button>
+                    </ul>
+
+                    <div class="content">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam
+                            erat volutpat. Morbi imperdiet, mauris ac auctor dictum, nisl
+                            ligula egestas nulla.
+                        </p>
+                    </div>
+                </div>
+                <div class="right__col">
+                    <nav>
+                        <ul>
+                            <li><a class="active" href="myaccount.html">Sản phẩm đã mua</a></li>
+                            <li><a href="myaccount-loved.html">Yêu thích</a></li>
+                            <li><a href="myaccount-cart.html">Giỏ hàng</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="photos">
+                        <table>
+                            <thead>
+                                <tr>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Hình ảnh</th>
+                                    <th>Tên</th>
+                                    <th>Size</th>
+                                    <th>Giá</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td><img src="pictures/nike-blue-white-1.png" alt="Photo" /></td>
+                                    <td>nike-blue-white-1</td>
+                                    <td>42</td>
+                                    <td>$400</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td><img src="pictures/nike-blue-white-1.png" alt="Photo" /></td>
+                                    <td>nike-blue-white-1</td>
+                                    <td>42</td>
+                                    <td>$400</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td><img src="pictures/nike-blue-white-1.png" alt="Photo" /></td>
+                                    <td>nike-blue-white-1</td>
+                                    <td>42</td>
+                                    <td>$400</td>
+                                </tr>
+
+                                <tr>
+                                    <td>4</td>
+                                    <td><img src="pictures/nike-blue-white-1.png" alt="Photo" /></td>
+                                    <td>nike-blue-white-1</td>
+                                    <td>42</td>
+                                    <td>$400</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td><img src="pictures/nike-blue-white-1.png" alt="Photo" /></td>
+                                    <td>nike-blue-white-1</td>
+                                    <td>42</td>
+                                    <td>$400</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="services">
+
+                <div class="services-box">
+
+                    <div class="services-card">
+                        <i class='bx bxs-truck'></i>
+                        <h3>Delivery</h3>
+                        <p>Lorem ipsum dolor sit eaque quasi.</p>
+                    </div>
+
+                    <div class="services-card">
+                        <i class='bx bx-headphone'></i>
+                        <h3>24/7 Services</h3>
+                        <p>Lorem ipsum dolor sit eaque quasi.</p>
+                    </div>
+
+                    <div class="services-card">
+                        <i class='bx bxs-purchase-tag'></i>
+                        <h3>Best Deal</h3>
+                        <p>Lorem ipsum dolor sit eaque quasi.</p>
+                    </div>
+
+                    <div class="services-card">
+                        <i class='bx bxs-lock-alt'></i>
+                        <h3>Secure Payment</h3>
+                        <p>Lorem ipsum dolor sit eaque quasi.</p>
+                    </div>
+                    <a style="color: white;" href="#" id="scroll-to-top-button"><i class="fa-solid fa-angles-up"></i>
+                        Click to scroll to top</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

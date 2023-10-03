@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div id="header"></div>
+    <script>
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("header").innerHTML = this.responseText;
+            }
+        };
+        xhttp.open("GET", "header.html", true);
+        xhttp.send();
+    </script>
+
+    <div class="container">
+        <div class="hot-deals">
+
+            <div class="directory-products-title">
+                <i class="fa-solid fa-book-open fa-horizontal"></i>
+                <h1>Products</h1>
+            </div>
+
+            <div class="hot-deals-card">
+                <div class="card">
+                    <div class="heart"><a href="#" class="fa-regular fa-heart fa-beat" id="heart"></a></div>
+                    <div class="cart"><a href="#" class='fa-solid fa-cart-shopping fa-beat' id="cart"></a></div>
+                    <div class="card-img"><img src="pictures/nike-running-black-1.png" alt=""></div>
+                    <div class="card-title">
+                        <h1>Tên sách: 1</h1>
+                    </div>
+                    <div class="card-price">
+                        <p>Giá sách: </p>
+                    </div>
+                    <div class="card-chapter">
+                        <p>Tập: </p>
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                    </div>
+                    <div class="card-action">
+                        <button> <a href="detail.html">Detail</a></button>
+                        <button><a href="">Buy Now</a></button>
+                        <button>Add cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="heart"><a href="#" class="fa-regular fa-heart fa-beat" id="heart"></a></div>
+                    <div class="cart"><a href="#" class='fa-solid fa-cart-shopping fa-beat' id="cart"></a></div>
+                    <div class="card-img"><img src="pictures/nike-running-black-2-removebg-preview.png" alt=""></div>
+                    <div class="card-title">
+                        <h1>Tên sách: 1</h1>
+                    </div>
+                    <div class="card-price">
+                        <p>Giá sách: </p>
+                    </div>
+                    <div class="card-chapter">
+                        <p>Tập: </p>
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                    </div>
+                    <div class="card-action">
+                        <button>Buy Now</button>
+                        <button>Add cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="heart"><a href="#" class="fa-regular fa-heart fa-beat" id="heart"></a></div>
+                    <div class="cart"><a href="#" class='fa-solid fa-cart-shopping fa-beat' id="cart"></a></div>
+                    <div class="card-img"><img src="pictures/nike-running-black-1.png" alt=""></div>
+                    <div class="card-title">
+                        <h1>Tên sách: 1</h1>
+                    </div>
+                    <div class="card-price">
+                        <p>Giá sách: </p>
+                    </div>
+                    <div class="card-chapter">
+                        <p>Tập: </p>
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                    </div>
+                    <div class="card-action">
+                        <button>Buy Now</button>
+                        <button>Add cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="heart"><a href="#" class="fa-regular fa-heart fa-beat" id="heart"></a></div>
+                    <div class="cart"><a href="#" class='fa-solid fa-cart-shopping fa-beat' id="cart"></a></div>
+                    <div class="card-img"><img src="pictures/nike-blue-white-1.png" alt=""></div>
+                    <div class="card-title">
+                        <h1>Tên sách: 1</h1>
+                    </div>
+                    <div class="card-price">
+                        <p>Giá sách: </p>
+                    </div>
+                    <div class="card-chapter">
+                        <p>Tập: </p>
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                    </div>
+                    <div class="card-action">
+                        <button>Buy Now</button>
+                        <button>Add cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="heart"><a href="#" class="fa-regular fa-heart fa-beat" id="heart"></a></div>
+                    <div class="cart"><a href="#" class='fa-solid fa-cart-shopping fa-beat' id="cart"></a></div>
+                    <div class="card-img"><img src="pictures/nike-running-black-2-removebg-preview.png" alt=""></div>
+                    <div class="card-title">
+                        <h1>Tên sách: 1</h1>
+                    </div>
+                    <div class="card-price">
+                        <p>Giá sách: </p>
+                    </div>
+                    <div class="card-chapter">
+                        <p>Tập: </p>
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                    </div>
+                    <div class="card-action">
+                        <button>Buy Now</button>
+                        <button>Add cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="heart"><a href="#" class="fa-regular fa-heart fa-beat" id="heart"></a></div>
+                    <div class="cart"><a href="#" class='fa-solid fa-cart-shopping fa-beat' id="cart"></a></div>
+                    <div class="card-img"><img src="pictures/nike-blue-white-1.png" alt=""></div>
+                    <div class="card-title">
+                        <h1>Tên sách: 1</h1>
+                    </div>
+                    <div class="card-price">
+                        <p>Giá sách: </p>
+                    </div>
+                    <div class="card-chapter">
+                        <p>Tập: </p>
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                    </div>
+                    <div class="card-action">
+                        <button>Buy Now</button>
+                        <button>Add cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="heart"><a href="#" class="fa-regular fa-heart fa-beat" id="heart"></a></div>
+                    <div class="cart"><a href="#" class='fa-solid fa-cart-shopping fa-beat' id="cart"></a></div>
+                    <div class="card-img"><img src="pictures/nike-running-black-2-removebg-preview.png" alt=""></div>
+                    <div class="card-title">
+                        <h1>Tên sách: 1</h1>
+                    </div>
+                    <div class="card-price">
+                        <p>Giá sách: </p>
+                    </div>
+                    <div class="card-chapter">
+                        <p>Tập: </p>
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                    </div>
+                    <div class="card-action">
+                        <button>Buy Now</button>
+                        <button>Add cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="heart"><a href="#" class="fa-regular fa-heart fa-beat" id="heart"></a></div>
+                    <div class="cart"><a href="#" class='fa-solid fa-cart-shopping fa-beat' id="cart"></a></div>
+                    <div class="card-img"><img src="pictures/nike-running-black-1.png" alt=""></div>
+                    <div class="card-title">
+                        <h1>Tên sách: 1</h1>
+                    </div>
+                    <div class="card-price">
+                        <p>Giá sách: </p>
+                    </div>
+                    <div class="card-chapter">
+                        <p>Tập: </p>
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                    </div>
+                    <div class="card-action">
+                        <button>Buy Now</button>
+                        <button>Add cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="heart"><a href="#" class="fa-regular fa-heart fa-beat" id="heart"></a></div>
+                    <div class="cart"><a href="#" class='fa-solid fa-cart-shopping fa-beat' id="cart"></a></div>
+                    <div class="card-img"><img src="pictures/nike-blue-white-1.png" alt=""></div>
+                    <div class="card-title">
+                        <h1>Tên sách: 1</h1>
+                    </div>
+                    <div class="card-price">
+                        <p>Giá sách: </p>
+                    </div>
+                    <div class="card-chapter">
+                        <p>Tập: </p>
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                    </div>
+                    <div class="card-action">
+                        <button>Buy Now</button>
+                        <button>Add cart</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="heart"><a href="#" class="fa-regular fa-heart fa-beat" id="heart"></a></div>
+                    <div class="cart"><a href="#" class='fa-solid fa-cart-shopping fa-beat' id="cart"></a></div>
+                    <div class="card-img"><img src="pictures/nike-running-black-2-removebg-preview.png" alt=""></div>
+                    <div class="card-title">
+                        <h1>Tên sách: 1</h1>
+                    </div>
+                    <div class="card-price">
+                        <p>Giá sách: </p>
+                    </div>
+                    <div class="card-chapter">
+                        <p>Tập: </p>
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                    </div>
+                    <div class="card-action">
+                        <button>Buy Now</button>
+                        <button>Add cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="services">
+
+                <div class="services-box">
+        
+                    <div class="services-card">
+                        <i class='bx bxs-truck'></i>
+                        <h3>Delivery</h3>
+                        <p>Lorem ipsum dolor sit eaque quasi.</p>
+                    </div>
+        
+                    <div class="services-card">
+                        <i class='bx bx-headphone'></i>
+                        <h3>24/7 Services</h3>
+                        <p>Lorem ipsum dolor sit eaque quasi.</p>
+                    </div>
+        
+                    <div class="services-card">
+                        <i class='bx bxs-purchase-tag'></i>
+                        <h3>Best Deal</h3>
+                        <p>Lorem ipsum dolor sit eaque quasi.</p>
+                    </div>
+        
+                    <div class="services-card">
+                        <i class='bx bxs-lock-alt'></i>
+                        <h3>Secure Payment</h3>
+                        <p>Lorem ipsum dolor sit eaque quasi.</p>
+                    </div>
+                    <a style="color: white;" href="#" id="scroll-to-top-button"><i class="fa-solid fa-angles-up"></i>
+                        Click to scroll to top</a>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+</body>
+</html>
